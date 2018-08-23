@@ -1,0 +1,582 @@
+    1  ls -l
+    2  pwd
+    3  python
+    4  python3
+    5  pip
+    6  update
+    7  exit
+    8  sudo apt-get install gnome-tweak-tool
+    9  exit
+   10  sudo apt-get pip
+   11  sudo apt-get install pip
+   12  sudo apt-get install gnome-tweak-tool
+   13  gnome-tweak-tool
+   14  exit
+   15  pip install
+   16  sudo apt-get install python-pip
+   17  pip-install
+   18  pip --version
+   19  exit
+   20  python3
+   21  sudo apt-get install python3
+   22  python3
+   23  conda
+   24  sudo add-apt-repository ppa:deadsnakes/ppa
+   25  sudo apt-get update
+   26  sudo apt-get install python3.6
+   27  python3.6
+   28  pip4
+   29  pip3
+   30  sudo apt-get install python3-pip
+   31  sudo pip3 install numpy
+   32  python3.6
+   33  python3
+   34  pip3.6
+   35  pip
+   36  pip3 -V
+   37  sudo pip3 install -U pip
+   38  pip3 -V
+   39  pip -V
+   40  sudo pip3 install -U pip3
+   41  exit
+   42  pip3 install flask
+   43  sudo pip3 install virtualenv virtualenvwrapper
+   44  vim ~/.bashrc
+   45  nano ~/.bashrc
+   46  mkvirtualenv flask
+   47  atom
+   48  atom ~/.bashrc
+   49  exit
+   50  mkvirtualenv env-name
+   51  workon
+   52  virtualenv
+   53  mkvirtualenv
+   54  exit
+   55  mkvirtualenv
+   56  exit
+   57  mkvirtualenv
+   58  mkvirtualenv test
+   59  source 'which virtualenvwrapper.sh'
+   60  source 'virtualenvwrapper.sh'
+   61  source '/usr/bin/virtualenvwrapper.sh'
+   62  source '/usr/local/bin/virtualenvwrapper.sh'
+   63  sudo pip3 install virtualenvwrapper
+   64  sudo pip3 install virtualenv
+   65  sudo pip3 install --ignore-installed six virtualenv
+   66  sudo pip3 install --ignore-installed six virtualenvwrapper
+   67  mkvirtualenv test
+   68  source '/usr/bin/virtualenvwrapper.sh'
+   69  source '/usr/local/bin/virtualenvwrapper.sh'
+   70  exit
+   71  mkvirtualenv
+   72  mkvirtualenv test
+   73  workon
+   74  workon env-name
+   75  deactivate
+   76  rmvirtualenv test
+   77  mkvirtualenv flask
+   78  pip3 install flask
+   79  python3
+   80  deactivate
+   81  python3
+   82  workon
+   83  workon flask
+   84  touch flask-app.py
+   85  dir
+   86  python3 flask-app.py
+   87  deactivate
+   88  workon flask
+   89  deactivate
+   90  rmvirtualenv flask
+   91  dir
+   92  rm flask-app.py
+   93  dir
+   94  mkdir tensorflow
+   95  cd tensorflow/
+   96  dir
+   97  virtualenv --system-site-packages -p python3 venv
+   98  workon venv
+   99  workon
+  100  cd ..
+  101  workon
+  102  dir
+  103  cd tensorflow/
+  104  source ./venv/bin/activate
+  105  pip install -U pip
+  106  pip3 install -U pip3
+  107  pip3 install -U pip
+  108  pip -V
+  109  python3
+  110  python
+  111  pip list
+  112  python -c "import tensorflowas tf; print(tf.__version__)"
+  113  python -c "import tensorflow as tf; print(tf.__version__)"
+  114  pip install tensorflow
+  115  python -c "import tensorflow as tf; print(tf.__version__)"
+  116  pip install keras
+  117  python
+  118  deactivate
+  119  dir
+  120  cd ..
+  121  dir
+  122  exit
+  123  sudo wget -O - https://tdesktop.com/linux > tsetup.tar.xz
+  124  учше
+  125  exit
+  126  tsetup.sh
+  127  ./tsetup.sh
+  128  sudo ./tsetup.sh
+  129  ls -l
+  130  sudo ./tsetup.sh
+  131  tar -xJvf tsetup.tar.xz
+  132  sudo apt-get install xz-utils
+  133  tar -xpJf tsetup.tar.xz
+  134  dir
+  135  cd tensorflow
+  136  dir
+  137  workon
+  138  ls -l
+  139  cd venv
+  140  ls -l
+  141  cd bin
+  142  ls -l
+  143  cd ..
+  144  cd bin
+  145  ls -l
+  146  python activate_this.py
+  147  cd ..
+  148  /bin/activate
+  149  ./bin/activate
+  150  sudo ./bin/activate
+  151  cd ..
+  152  source ~/tensorflow/venv/bin/activate
+  153  ls -l
+  154  cd tensorflow
+  155  cd venv
+  156  ls -l
+  157  cd new_app
+  158  ls -l
+  159  python model.py
+  160  pip install pandas
+  161  python model.py
+  162  deactivate
+  163  exit
+  164  python
+  165  exit
+  166  source ./tensorflow/venv/bin/activate
+  167  ls -l
+  168  cd tensorflow/
+  169  ls -l
+  170  cd venv
+  171  ls -l
+  172  mkdir conv_net
+  173  ls -l
+  174  cd conv_net
+  175  ls -l
+  176  ls -la
+  177  python model.py
+  178  python
+  179  python model.py
+  180  python
+  181  python model.py
+  182  deactivate
+  183  exit
+  184  rfkill list all
+  185  sudo modprobe -r ideapad-laptop
+  186  sudo rfkill unblock all
+  187  rfkill list all
+  188  sudo rfkill unblock all
+  189  rfkill list all
+  190  sudo rfkill block all
+  191  rfkill list all
+  192  sudo rfkill unblock all
+  193  rfkill list all
+  194  sudo modprobe -r maxos-pc
+  195  sudo modprobe -r ideapad-laptop
+  196  sudo rfkill unblock all
+  197  rfkill list all
+  198  lsmod | grep -e wl -e brcmsmac
+  199  sudo apt-get purge bcmwl-kernel-source
+  200  exit
+  201  rfkill list all
+  202  exit
+  203  ifconfig
+  204  rfkill list all
+  205  sudo lshw -C network
+  206  find /lib/modules/$(uname -r)/kernel/drivers/net/wireless -name '*.ko'
+  207  sudo apt-get install -y hardinfo 
+  208  hardinfo
+  209  exit
+  210  sudo systemctl restart network-manager
+  211  sudo service network-manager restart
+  212  sudo rm /var/lib/apt/lists/lock
+  213  sudo rm /var/cache/apt/archives/lock
+  214  sudo rm /var/lib/dpkg/lock
+  215  sudo apt-get upgrade
+  216  sudo apt-get --fix-missing install
+  217  sudo apt-get --fix-broken install
+  218  exit
+  219  sudo service network-manager restart
+  220  killall nm-applet && nm-applet &
+  221  sudo lshw -class network
+  222  sudo vi /etc/pm/config.d/config
+  223  sudo lsmod
+  224  modinfo ath10l_pci
+  225  modinfo ath9k
+  226  find /lib -name ath9k.ko
+  227  modprobe -v ath9k
+  228  sudo modprobe -v ath9k
+  229  sudo lshw -class network
+  230  lspci -nn
+  231  dmesg | grep -e ath -e wlan
+  232  uname -rm
+  233  lshw -C Network
+  234  sudo lshw -C Network
+  235  sudo iwlist scan
+  236  dmesg | grep -e ath -e wlan
+  237  sudo rm -f /var/run/wpa_supplicant/wlan0
+  238  sudo ifconfig eth0 down
+  239  sudo ifconfig wlan 0 down
+  240  sudo ifconfig wlan0 down
+  241  sudo dhclient -r wlan0
+  242  sudo wpa_supplicant -w -Dmadwifi -iwlan0 -c/etc/wpa_supplicant.conf -dd
+  243  sudo ifconfig wlan0 up
+  244  sudo ifconfig eth0 up
+  245  sudo lshw lshw -C Network
+  246  sudo lshw -C Network
+  247  exit
+  248  ды -д
+  249  ls -l
+  250  ls -la
+  251  vim ./.profile
+  252  sudo apt-get install vim
+  253  vim
+  254  vi
+  255  vim ./.profile
+  256  source ~/tensorflow/venv/bin/activate
+  257  exit
+  258  sudo lshw -C network
+  259  exit
+  260  vim .bashrc
+  261  exit
+  262  vim .bashrc
+  263  exit
+  264  sudo apt-get npm
+  265  sudo apt-get nodejs
+  266  sudo apt-get install nodejs
+  267  sudo apt-get install npm
+  268  sudo ln -s /usr/bin/nodejs /usr/bin/node
+  269  node -v
+  270  npm -v
+  271  npm install express
+  272  sudo nautilus
+  273  exit
+  274  sudo nautilus
+  275  exit
+  276  sudo nautilus
+  277  exit
+  278  sudo nautilus
+  279  exit
+  280  vim
+  281  node app.js
+  282  vim app.js
+  283  node app.js
+  284  vim app.js
+  285  node app.js
+  286  vim app.js
+  287  node app.js
+  288  vim app.js
+  289  exit
+  290  node app.js
+  291  exi
+  292  exit
+  293  node app.js
+  294  vim -v
+  295  ls -l
+  296  vim .vimrc
+  297  ls -la
+  298  vim .viminfo
+  299  vim ~/.vim/doc
+  300  vim --version
+  301  vim $VIM/vimrc
+  302  vim
+  303  sudo apt-get update
+  304  sudo apt-get install vim
+  305  git clone https://github.com/vim/vim.git
+  306  $ cd vim/src
+  307  $ make
+  308  ls -l
+  309  cd vim
+  310  ls -l
+  311  cd src
+  312  make
+  313  sudo make install
+  314  sudo apt-get install ncurses
+  315  cd ..
+  316  rm -r vim
+  317  ls -l
+  318  npm install -D eslint
+  319  ls -l
+  320  npm install -D eslint
+  321  ./node_modules/.bin/eslint --init
+  322  vim app.js
+  323  exit
+  324  vim .vimrc
+  325  ls -l
+  326  ls -la
+  327  vim
+  328  mkdir .vim
+  329  ls -la
+  330  cd .vim
+  331  mkdir colors
+  332  vim badwolf.vim
+  333  ls -l
+  334  cd colors
+  335  ls -l
+  336  vim badwolf.vim
+  337  ls -l
+  338  cd ../..
+  339  ls -l
+  340  vim
+  341  vim .vimrc
+  342  vim
+  343  vim .vimrc
+  344  vim app.js
+  345  exit
+  346  git
+  347  git -v
+  348  node
+  349  учше
+  350  exit
+  351  vim .vimrc
+  352  vim
+  353  vim .vimrc
+  354  vim
+  355  vim .vim/colors/myterm.vim
+  356  vi
+  357  vim .vim/colors/myterm.vim
+  358  vim
+  359  vim .vim/colors/badwolf.vim 
+  360  vim .vimrc
+  361  vim
+  362  vim .vimrc
+  363  vim
+  364  vim .vimrc
+  365  vim
+  366  vim .vimrc
+  367  vim
+  368  vim .vimrc
+  369  exit
+  370  ls -l
+  371  cd node_modules
+  372  ls -l
+  373  cd ..
+  374  ls -l
+  375  mkdir -p projects/node-tutorial
+  376  ls -l
+  377  cd projects/node-tutorial
+  378  ls -l
+  379  express first-app
+  380  sudo npm install -g express
+  381  express first-app
+  382  sudo apt install node-express-generator
+  383  express first-app
+  384  ls -l
+  385  cd first-app && npm install
+  386  ls -l
+  387  node app.js
+  388  node app
+  389  vim app.js
+  390  git config --global user.namepopov-maksim
+  391  git config --global user.email maximpop1@yandex.ru
+  392  git config --global alias.co checkout
+  393  git config --global alias.ci commit
+  394  git init
+  395  echo 'node_modules' > .gitignore
+  396  vim .gitignore
+  397  git add
+  398  git add .
+  399  git ci -m "Initial commit"
+  400  ssh-keygen -t rsa -C maximpop1@yandex.ru
+  401  sudo apt-get install xclip
+  402  xclip -sel clip < ~/.ssh/id_rsa.pub
+  403  ssh -T git@github.com
+  404  git remote add origin git@github.com:popov-maksim/first-app.git
+  405  git push -u origin master
+  406  wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+  407  heroku login
+  408  ls -l
+  409  vim package.json
+  410  echo 'web: node app.js' > Procfile
+  411  foreman start
+  412  sudo apt install ruby-foreman
+  413  foreman start
+  414  git add >
+  415  git add .
+  416  git ci -m "Added Procfile and engines"
+  417  git push
+  418  heroku create
+  419  heroku keys:add ~/.ssh/id_rsa.pub
+  420  git push heroku master
+  421  heroku open
+  422  vim package.json 
+  423  git status
+  424  git add .
+  425  git status
+  426  git ci -m "Edited package.json"
+  427  git push heroku master
+  428  heroku open
+  429  git push
+  430  cd ..
+  431  ls -l
+  432  mkdir node-demo-app
+  433  cd node-demo-app/
+  434  ls -l
+  435  touch package.json
+  436  ls -l
+  437  vim package.json 
+  438  npm install
+  439  ls -l
+  440  cd node_modules
+  441  ls -la
+  442  cd ..
+  443  touch server.js
+  444  vim server.js
+  445  npm start
+  446  vim package.json 
+  447  npm install
+  448  mkdir tests
+  449  touch tests/test.js
+  450  vim tests/test.js
+  451  ./node_modules/.bin/mocha --require should --reporter spec tests/test.js
+  452  vim tests/test.js
+  453  ls -l
+  454  node_modules/.bin/mocha --require should --reporter spec tests/test.js
+  455  vim tests/test.js
+  456  node_modules/.bin/mocha --require should --reporter spec tests/test.js
+  457  vim tests/test.js
+  458  node_modules/.bin/mocha --require should --reporter spec tests/test.js
+  459  touch Makefile
+  460  ls -l
+  461  vim Makefile
+  462  make test
+  463  vim Makefile
+  464  rm Makefile
+  465  ls -l
+  466  mkdir app
+  467  touch app/main.js
+  468  vim app/main.js
+  469  vim app.js
+  470  ls -l
+  471  vim server.js
+  472  npm start
+  473  mkdir public
+  474  ls -l
+  475  cd app
+  476  mkdir controllers
+  477  cd controllers/
+  478  vim pages.js
+  479  cd ..
+  480  ls -l
+  481  cd ..
+  482  ls -l
+  483  vim app.js
+  484  ls -l
+  485  cd app
+  486  ls -l
+  487  vim main.js
+  488  ls ..
+  489  vim main.js
+  490  cd ~
+  491  ls -l
+  492  rm -r projects
+  493  ls -l
+  494  ls -la
+  495  cd .vim
+  496  ls -l
+  497  mkdir indent
+  498  ls -l
+  499  cd ..
+  500  ls -l
+  501  cd tensorflow
+  502  ls -la
+  503  cd venv
+  504  ls -l
+  505  atom pip-selfcheck.json 
+  506  cd ..
+  507  vim .vimrc
+  508  sudo pip3 install pyflakes pep pylint ipython
+  509  sudo pip install pyflakes pep pylint ipython
+  510  sudo pip3 install pyflakes pep8 pylint ipython
+  511  cd .vim
+  512  ls -l
+  513  mkdir extern-cfg
+  514  vim extern-cfg/jshint.json
+  515  ls -l colors
+  516  sudo pip3 install pyflakes pep8 pylint ipython
+  517  pip3 -V
+  518  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+  519  python3 get-pip.py --force-reinstall
+  520  sudo python3 get-pip.py --force-reinstall
+  521  ls -l
+  522  rm get-pip.py 
+  523  ls -l
+  524  cd ..
+  525  ls -l
+  526  pip3 -V
+  527  sudo pip3 install pyflakes pep8 pylint ipython
+  528  ctags
+  529  sudp apt-get install exuberant-ctags
+  530  sudo apt-get install exuberant-ctags
+  531  git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  532  vim .vimrc
+  533  vim
+  534  vim .vimrc
+  535  vim
+  536  sudo apt-get install fonts-powerline
+  537  vim .vimrc
+  538  vim .vimrc.bundles.local
+  539  vim
+  540  vim .vimrc
+  541  exit
+  542  vim .vimrc
+  543  vim
+  544  vim .vimrc
+  545  cd tensorflow
+  546  ls -l
+  547  cd venv
+  548  ls -l
+  549  cd conv_net
+  550  ls -l
+  551  vim model.py
+  552  cd ~
+  553  exit
+  554  docker
+  555  sudo ap-get install docker.io
+  556  sudo apt-get install docker.io
+  557  docker
+  558  exit
+  559  sudo teleegram
+  560  sudo telegram
+  561  telegram
+  562  nautilus
+  563  nautilus &
+  564  pc
+  565  ps
+  566  man -h | less
+  567  jobs
+  568  mkdir week1
+  569  ls -la
+  570  cd week1
+  571  ls -l
+  572  touch ex1.txt
+  573  ls /usr/bin | grep gcc| sort -r > ex1.txt
+  574  cat ex1.txt
+  575  ls -la
+  576  man ls
+  577  touch ex2.txt
+  578  mv ex2.txt ex3.txt
+  579  ls -la
+  580  rm ex3.txt
+  581  ls -la
+  582  history > ex2.txt
