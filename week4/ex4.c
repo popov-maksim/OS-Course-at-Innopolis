@@ -7,19 +7,21 @@
 #define MAX 100
 
 void getCommand(char *cmd, char *str) {
-    printf("hello");
     int i;
-    for (i = 0; i < strlen(str) && str[i] != ' '; ++i) {
+    for (i = 0; str[i] != '\n' && str[i] != ' '; ++i) {
         cmd[i] = str[i];
     }
     cmd[i] = '\0';
-    printf("end");
 }
 
-void getParams(char **params, char *str, int startInd) {
+void getParams(char params[][MAX], char *str, int startInd) {
     for (int i = startInd, s = 1, col = 0; i < strlen(str); ++i) {
-        if (str[i] == ' ') {
-            params[col] = 0;
+        if (str[i] == '\n') {
+            params[s][col] = 0;
+            break;
+        }
+        else if (str[i] == ' ') {
+            params[s][col] = 0;
             col = 0;
             s++;
         }
@@ -31,7 +33,6 @@ void getParams(char **params, char *str, int startInd) {
 }
 
 void processStr(char *cmd, char **params, char *str) {
-    printf("%s", str);
     getCommand(cmd, str);
     if (strchr(str, ' ')) {
         getParams(params, str, strchr(str, ' ') - str + 1);
@@ -56,21 +57,19 @@ int main() {
         }
         fgets(str, 100, stdin);
         processStr(cmd, params, str);
+        strcpy(params[0], cmd);
 
         // execution of a command
         if (strchr(str, '&')) { // process in background
             pid_t pid = fork();
             if (pid == 0) { // child process
                 execve(cmd, params, env);
-                printf("\n");
-                break;
+                exit(0);
             }
+            printf("\n");
         }
         else {
-            int status = system(cmd);
-            if (status) {
-                printf("Wrong command!");
-            }
+            system(str);
             printf("\n");
         }
     }
