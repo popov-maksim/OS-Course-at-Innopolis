@@ -7,15 +7,11 @@
 #define MAX 100
 
 void getCommand(char cmd[], char str[]) {
-    cmd[0] = 'm';
-    cmd[1] = 'a';
-    cmd[2] = 'n';
-    // int i;
-    // printf("%d", strlen(str));
-    // for (i = 0; i < strlen(str) && str[i] != ' '; ++i) {
-    //     cmd[i] = str[i];
-    // }
-    // cmd[i] = '\0';
+    int i;
+    for (i = 0; i < strlen(str) && str[i] != ' '; ++i) {
+        cmd[i] = str[i];
+    }
+    cmd[i] = '\0';
 }
 
 void getParams(char *params[], char str[], int startInd) {
@@ -34,8 +30,7 @@ void getParams(char *params[], char str[], int startInd) {
 
 void processStr(char cmd[], char *params[], char str[]) {
     getCommand(cmd, str);
-    printf();
-    if (1) {
+    if (strchr(str, ' ')) {
         getParams(params, str, strchr(str, ' ') - str + 1);
     }
 }
