@@ -6,15 +6,17 @@
 #define PLACEHOLDER ">"
 #define MAX 100
 
-void getCommand(char cmd[], char str[]) {
+void getCommand(char *cmd, char *str) {
+    printf("hello");
     int i;
     for (i = 0; i < strlen(str) && str[i] != ' '; ++i) {
         cmd[i] = str[i];
     }
     cmd[i] = '\0';
+    printf("end");
 }
 
-void getParams(char *params[], char str[], int startInd) {
+void getParams(char **params, char *str, int startInd) {
     for (int i = startInd, s = 1, col = 0; i < strlen(str); ++i) {
         if (str[i] == ' ') {
             params[col] = 0;
@@ -28,7 +30,8 @@ void getParams(char *params[], char str[], int startInd) {
     }
 }
 
-void processStr(char cmd[], char *params[], char str[]) {
+void processStr(char *cmd, char **params, char *str) {
+    printf("%s", str);
     getCommand(cmd, str);
     if (strchr(str, ' ')) {
         getParams(params, str, strchr(str, ' ') - str + 1);
