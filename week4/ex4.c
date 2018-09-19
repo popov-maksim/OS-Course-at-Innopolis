@@ -5,44 +5,23 @@
 
 #define PLACEHOLDER ">"
 #define MAX 100
+#define MAX_PARAMS 10
 
-void getCommand(char *cmd, char *str) {
-    int i;
-    for (i = 0; str[i] != '\n' && str[i] != ' '; ++i) {
-        cmd[i] = str[i];
+void processStr(char **cmd, char *params[], char *str) {
+    // geting command
+    *cmd = strtok(str, " ");
+    
+    // geting params
+    char *param;
+    int i = 1;
+    while ((param = strtok(NULL, " &\n")) && i < MAX_PARAMS) {
+        params[i] = param;
+        ++i;
     }
-    cmd[i] = '\0';
-}
-
-void getParams(char params[][MAX], char *str, int startInd) {
-    for (int i = startInd, s = 1, col = 0; i < strlen(str); ++i) {
-        if (str[i] == '\n') {
-            params[s][col] = 0;
-            break;
-        }
-        else if (str[i] == ' ') {
-            params[s][col] = 0;
-            col = 0;
-            s++;
-        }
-        else {
-            params[s][col] = str[i];
-            col++;
-        }
-    }
-}
-
-void processStr(char *cmd, char **params, char *str) {
-    getCommand(cmd, str);
-    if (strchr(str, ' ')) {
-        getParams(params, str, strchr(str, ' ') - str + 1);
-    }
+    params[i] = NULL;
 }
 
 int main() {
-    // env variables for child process
-    char *env = {NULL};
-
     printf("Welcome to maxSH\nTo exit use Ctrl-C\n");
 
     // main cycle
@@ -50,26 +29,30 @@ int main() {
         printf(PLACEHOLDER);
 
         // getting and processing string, result is cmd and params
-        char str[MAX], cmd[MAX], params[MAX][MAX];
-        // zeroing of all parameters
-        for (int i = 0; i < MAX; ++i) {
-            params[i][0] = 0;
-        }
+        char str[MAX];
+        char *cmd;
+        char * params[MAX_PARAMS];
+        int isBackGr;
         fgets(str, 100, stdin);
-        processStr(cmd, params, str);
-        strcpy(params[0], cmd);
+        strchr(str, '&') ? isBackGr = 1 : 0;
+        processStr(&cmd, params, str);
+        params[0] = cmd;
 
         // execution of a command
-        if (strchr(str, '&')) { // process in background
+        if (isBackGr) { // process in background
             pid_t pid = fork();
             if (pid == 0) { // child process
-                execve(cmd, params, env);
+                printf("%s", cmd);
+                execvp(cmd, params);
+                perror("Error: ");
+                printf("\n");
                 exit(0);
             }
-            printf("\n");
         }
         else {
-            system(str);
+            printf("%s", cmd);
+            execvp(cmd, params);
+            perror("Error: ");
             printf("\n");
         }
     }
