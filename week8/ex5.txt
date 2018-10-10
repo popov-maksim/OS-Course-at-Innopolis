@@ -1,0 +1,3 @@
+1) Virtual memory is an extension of physical memory (this is abstraction of memory used by OS). Usually the size of virtual memory is more than the size of physical memory.
+
+2) Virtual address is an address in virtual memory and physical address is an address in physical memory. Virtual address is mapped to physical address by MMU. Usually virtual address space is more than physical address space.

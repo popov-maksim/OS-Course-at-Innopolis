@@ -1,0 +1,3 @@
+We have 16-bit virtual address and 8 KB = 2^13 pages and hence 13 bits are used for offset inside page and for entries there are left 16 - 13 = 3 bits. It means there are needed 2^3 = 8 entries for the single-level page table.
+
+Answer: 8 entries
