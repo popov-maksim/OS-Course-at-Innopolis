@@ -1,0 +1,36 @@
+total 20
+drwxrwxr-x  3 maxim maxim 4096 окт 24 18:21 .
+drwxrwxr-x 12 maxim maxim 4096 окт 24 17:50 ..
+-rw-rw-r--  3 maxim maxim    0 окт 24 17:52 _ex1_1.txt
+-rw-rw-r--  3 maxim maxim    0 окт 24 17:52 _ex1_2.txt
+-rw-rw-r--  3 maxim maxim    0 окт 24 17:52 _ex1.txt
+-rw-rw-r--  1 maxim maxim   38 окт 24 17:57 ex1.txt
+-rw-rw-r--  1 maxim maxim    0 окт 24 17:59 _ex2.txt
+-rw-rw-r--  1 maxim maxim   16 окт 24 18:07 ex2.txt
+-rw-rw-r--  1 maxim maxim    0 окт 24 18:13 _ex3.txt
+-rw-rw-r--  1 maxim maxim    0 окт 24 18:21 ex3.txt
+drwxrwxr-x  2 maxim maxim 4096 окт 24 18:10 week01
+total 24
+drwxrwxr-x  3 maxim maxim 4096 окт 24 18:21 .
+drwxrwxr-x 12 maxim maxim 4096 окт 24 17:50 ..
+-rw-rw-r--  3 maxim maxim    0 окт 24 17:52 _ex1_1.txt
+-rw-rw-r--  3 maxim maxim    0 окт 24 17:52 _ex1_2.txt
+-rw-rw-r--  3 maxim maxim    0 окт 24 17:52 _ex1.txt
+-rw-rw-r--  1 maxim maxim   38 окт 24 17:57 ex1.txt
+-rw-rw-r--  1 maxim maxim    0 окт 24 17:59 _ex2.txt
+-rw-rw-r--  1 maxim maxim   16 окт 24 18:07 ex2.txt
+-rw----r--  1 maxim maxim    0 окт 24 18:13 _ex3.txt
+-rw-rw-r--  1 maxim maxim  611 окт 24 18:21 ex3.txt
+drwxrwxr-x  2 maxim maxim 4096 окт 24 18:10 week01
+total 24
+drwxrwxr-x  3 maxim maxim 4096 окт 24 18:21 .
+drwxrwxr-x 12 maxim maxim 4096 окт 24 17:50 ..
+-rw-rw-r--  3 maxim maxim    0 окт 24 17:52 _ex1_1.txt
+-rw-rw-r--  3 maxim maxim    0 окт 24 17:52 _ex1_2.txt
+-rw-rw-r--  3 maxim maxim    0 окт 24 17:52 _ex1.txt
+-rw-rw-r--  1 maxim maxim   38 окт 24 17:57 ex1.txt
+-rw-rw-r--  1 maxim maxim    0 окт 24 17:59 _ex2.txt
+-rw-rw-r--  1 maxim maxim   16 окт 24 18:07 ex2.txt
+-rw-rw-r--  1 maxim maxim    0 окт 24 18:13 _ex3.txt
+-rw-rw-r--  1 maxim maxim 1222 окт 24 18:22 ex3.txt
+drwxrwxr-x  2 maxim maxim 4096 окт 24 18:10 week01
