@@ -15,10 +15,13 @@ int main() {
     struct stat stat2;
 
     stat("ex1.txt", &stat1);
-    stat("ex1.memcpy.txt", &stat2);
     int size1 = stat1.st_size;
-    int size2 = stat2.st_size;
 
+    ftruncate(fd2, size1);
+
+    stat("ex1.memcpy.txt", &stat2);
+    int size2 = stat2.st_size;
+    
     char *map1 = mmap(NULL, size1, PROT_READ | PROT_WRITE, MAP_SHARED, fd1, 0);
     char *map2 = mmap(NULL, size2, PROT_READ | PROT_WRITE, MAP_SHARED, fd2, 0);
 

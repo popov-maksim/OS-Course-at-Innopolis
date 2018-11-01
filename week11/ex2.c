@@ -2,9 +2,10 @@
 #include <unistd.h>
 
 int main() {
-    int buf_size = 5;
-    setvbuf(stdout, NULL, _IOFBF, buf_size);
-    
+    int buf_size = 6;
+    setvbuf(stdout, NULL, _IOLBF, buf_size);
+
+    sleep(1);    
     printf("H");
     sleep(1);
     printf("e");
@@ -13,8 +14,7 @@ int main() {
     sleep(1);
     printf("l");
     sleep(1);
-    printf("o");
-    sleep(1);
+    printf("o\n");
 
     return 0;
 }

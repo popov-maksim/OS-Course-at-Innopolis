@@ -7,13 +7,14 @@
 #include <unistd.h>
 #include <string.h>
 
-#define STRING_TO_WRITE "This is a nice day\0"
+#define STRING_TO_WRITE "This is a nice day"
 
 int main() {
     int fd = open("ex1.txt", O_RDWR);
     char *string = STRING_TO_WRITE;
 
     struct stat file_stat;
+    ftruncate(fd, strlen(string));
     stat("ex1.txt", &file_stat);
 
     char *file_addr = mmap(NULL, file_stat.st_size, PROT_READ | PROT_WRITE, MAP_SHARED, fd, 0);
